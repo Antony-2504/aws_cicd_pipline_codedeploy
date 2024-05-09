@@ -3,13 +3,27 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18
-  pre_build:
+      python: 3.8
     commands:
-      - npm install
+      - echo "Install phase: Installing dependencies"
+      # Add commands to install dependencies here
+
   build:
     commands:
-      - npm run build
+      - echo "Build phase: Building project"
+      # Add commands to build your project here
+
+  post_build:
+    commands:
+      - echo "Post-build phase: Running post-build actions"
+      # Add commands for any post-build actions here
+
 artifacts:
   files:
-    - 'build/**/*'
+    - '**/*' # Include all files in the artifact
+  # You can also specify additional options such as artifact packaging and location
+
+# Optionally, you can define environment variables here
+# environment:
+#   variables:
+#     key: "value"
