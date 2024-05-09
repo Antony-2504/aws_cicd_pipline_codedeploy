@@ -1,19 +1,9 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      python: 3.8
-    commands:
-      - echo "Install phase: Installing dependencies"
-      # Add commands to install dependencies here
-
   build:
     commands:
-      - echo "Build phase: Building project"
+      - echo "Building the project..."
       # Add commands to build your project here
-
-  post_build:
-    commands:
-      - echo "Post-build phase: Running post-build actions"
-      # Add commands for any post-build actions here
+      - npm install
+      - npm run build
