@@ -17,8 +17,3 @@ phases:
     commands:
       - echo "Post-build phase: Running post-build actions"
       # Add commands for any post-build actions here
-
-artifacts:
-  files:
-    - '**/*' # Include all files in the artifact
-  # You can also specify additional options such as artifact packaging and location
