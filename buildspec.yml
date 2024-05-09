@@ -22,8 +22,3 @@ artifacts:
   files:
     - '**/*' # Include all files in the artifact
   # You can also specify additional options such as artifact packaging and location
-
-# Optionally, you can define environment variables here
-# environment:
-#   variables:
-#     key: "value"
